@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 0.0.0 (Windows 7 0.0.0)" package="" timestamp="2018-05-04T12:10:49" id="0" hostname="Javafs" tests="33" errors="0" failures="0" time="37.641">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/66.0.3359.139 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.374" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AppComponent"/>
+  <testcase name="AppComponent should have as title 'app'" time="0.104" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AppComponent"/>
+  <testcase name="AddProjectComponent Add Project test cases On init  project grid should have zero or more list items" time="1.676" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddProjectComponent"/>
+  <testcase name="AddProjectComponent Add Project test cases On reset button text is ADD" time="1.403" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddProjectComponent"/>
+  <testcase name="AddProjectComponent Add Project test cases On update button text is update" time="1.5" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddProjectComponent"/>
+  <testcase name="AddProjectComponent Add Project test cases Uncheck set date when date is null" time="1.444" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddProjectComponent"/>
+  <testcase name="AddProjectComponent Add Project test cases On submit  message should be shown" time="1.301" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddProjectComponent"/>
+  <testcase name="AddProjectComponent Add Project test cases On error  should return a message" time="1.132" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddProjectComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On init  project popup should have zero or more list items" time="1.268" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On success  should return a message" time="1.192" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On error  should return a message" time="1.348" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On form init edit  selected project name should be shown" time="1.16" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On form init edit  selected project name should be shown" time="1.167" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On edit  button text button text is edit " time="1.238" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On task submit  form mode Add task" time="1.204" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On task submit  form mode Add task" time="1.308" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On select  task project name is set" time="1.415" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On select  task project name is set" time="1.521" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On assignUser user name is set" time="1.38" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On select Task task name is set" time="1.411" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On handle change parent control set disable control" time="1.358" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="AddTaskComponent Add Project test cases On handle change parent control (false) set enable control" time="1.554" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddTaskComponent"/>
+  <testcase name="ViewTaskComponent Add Project test cases On init  project popup should have zero or more list items" time="1.403" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).ViewTaskComponent"/>
+  <testcase name="ViewTaskComponent Add Project test cases get all task should return zero or more tasks" time="1.108" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).ViewTaskComponent"/>
+  <testcase name="ViewTaskComponent Add Project test cases On success  should return a message" time="1.234" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).ViewTaskComponent"/>
+  <testcase name="ViewTaskComponent Add Project test cases On error  should return a message" time="1.058" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).ViewTaskComponent"/>
+  <testcase name="ViewTaskComponent Add Project test cases On project selected name is displayed in project textbox" time="0.971" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).ViewTaskComponent"/>
+  <testcase name="AddUserComponent Add User test cases On init button text is ADD" time="0.798" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddUserComponent"/>
+  <testcase name="AddUserComponent Add User test cases On reset click first_name should be set empty" time="0.765" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddUserComponent"/>
+  <testcase name="AddUserComponent Add User test cases On edit click button text changes to edit" time="0.773" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddUserComponent"/>
+  <testcase name="AddUserComponent Add User test cases On save should return a message" time="0.957" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddUserComponent"/>
+  <testcase name="AddUserComponent Add User test cases On delete should return a message" time="1.096" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddUserComponent"/>
+  <testcase name="AddUserService should be created" time="0.02" classname="HeadlessChrome_0_0_0_(Windows_7_0_0_0).AddUserService"/>
+  <system-out>
+    <![CDATA[HeadlessChrome 0.0.0 (Windows 7 0.0.0) LOG: Object{Project_ID: 0, End_Date: '05/05/2018', Start_Date: '05/04/2018', Manager_ID: null, Manager_Name: null, Priority: null, ProjectName: null, Status: 'Active'}
+,HeadlessChrome 0.0.0 (Windows 7 0.0.0) LOG: []
+,HeadlessChrome 0.0.0 (Windows 7 0.0.0) LOG: true
+,HeadlessChrome 0.0.0 (Windows 7 0.0.0) LOG: false
+,HeadlessChrome 0.0.0 (Windows 7 0.0.0) LOG: Object{status: Object{Result: false, Message: 'User Addition failed'}}
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

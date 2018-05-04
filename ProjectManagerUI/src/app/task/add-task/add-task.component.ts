@@ -42,7 +42,7 @@ export class AddTaskComponent implements OnInit {
     usersList: Users[] = [];
 
     private myForm: FormGroup;
-    private addTaskForm: FormGroup;
+    public addTaskForm: FormGroup;
 
     constructor(
         private formBuilder: FormBuilder,
@@ -128,8 +128,8 @@ export class AddTaskComponent implements OnInit {
             PriorityControl: [task.Priority, Validators.required],
             PriorityDisplayControl: [task.Priority],
             ParentTaskControl: [task.Parent_ID],
-            StartDateControl: [task.Start_Date !== null ? this.datePipe.transform(task.Start_Date,'MM/dd/yyyy').toString() : null, Validators.required],
-            EndDateControl: [task.End_Date !== null ? this.datePipe.transform(task.End_Date,'MM/dd/yyyy').toString() : null, Validators.required],
+            StartDateControl: [task.Start_Date != null ? this.datePipe.transform(task.Start_Date,'MM/dd/yyyy').toString() : null, Validators.required],
+            EndDateControl: [task.End_Date != null ? this.datePipe.transform(task.End_Date,'MM/dd/yyyy').toString() : null, Validators.required],
             UserIdControl: [task.User_ID]
         });
         this.addTaskForm.get('EndDateControl').disable();

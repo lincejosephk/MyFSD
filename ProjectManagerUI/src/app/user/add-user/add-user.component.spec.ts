@@ -1,6 +1,5 @@
 import { async, ComponentFixture, TestBed, inject } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-
 import { AddUserComponent } from './add-user.component';
 import { DataTableModule } from 'primeng/datatable';
 import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -13,7 +12,7 @@ import { AddUserService } from './add-user.service';
 import { ConfirmationService } from 'primeng/api';
 import { fakeBackendProvider, Interceptor } from '../../interceptor/interceptor';
 
-describe('AddUserComponent', () => {
+describe('Project Manager - AddUserComponent', () => {
   let component: AddUserComponent;
   let fixture: ComponentFixture<AddUserComponent>;
   let service: AddUserService;
@@ -36,45 +35,36 @@ describe('AddUserComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AddUserComponent);
-
     this.service = TestBed.get(AddUserService);
-
     this.confirmationService = TestBed.get(ConfirmationService);
     component = new AddUserComponent(service,confirmationService);
     component = fixture.componentInstance;
-
-    
   });
-
-
   describe('Add User test cases', () => { 
-
-    it('On init button text is ADD', () => {
-       
-      component.ngOnInit();
-      expect(component.saveButtonString) 
-          .toEqual('Add'); 
-    });
-    
-    it('On reset click first_name should be set empty', () => { 
+        
+    it('Test Case on reset click first_name should be set empty', () => { 
       component.onReset();
       expect(component.currentUser.First_Name) 
           .toEqual(''); 
     });
-
-    it('On edit click button text changes to edit', () => { 
+    it('Test Case on init button text is ADD', () => {
+      component.ngOnInit();
+      expect(component.saveButtonString) 
+          .toEqual('Add'); 
+    });
+    it('Test Case on edit click button text changes to edit', () => { 
       component.onEditClick({User_ID:1,First_Name:'test',Last_Name:'test',Employee_ID:'test'});
       expect(component.saveButtonString) 
           .toEqual('Edit'); 
     });
-    it('On save should return a message', () => { 
+    it('Test Case on save should return a message', () => { 
       component.currentUser={User_ID:1,First_Name:'test',Last_Name:'test',Employee_ID:'test'};
       component.onSave({User_ID:1,First_Name:'test',Last_Name:'test',Employee_ID:'test'});
      
       expect(component.msgs.length) 
           .toBeGreaterThanOrEqual(0); 
     });
-    it('On delete should return a message', () => { 
+    it('Test Case on delete should return a message', () => { 
       component.currentUser={User_ID:1,First_Name:'test',Last_Name:'test',Employee_ID:'test'};
       component.confirmDelete({User_ID:1,First_Name:'test',Last_Name:'test',Employee_ID:'test'});
       component._confirmationService.onAccept();

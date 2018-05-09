@@ -1,6 +1,5 @@
 import { async, ComponentFixture, TestBed, inject } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-
 import { DataTableModule } from 'primeng/datatable';
 import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { GrowlModule } from 'primeng/growl';
@@ -50,55 +49,52 @@ describe('AddTaskComponent', () => {
   });
 
 
-  describe('Add Project test cases', () => {
+  describe('ProjectManager - Add Task test cases', () => {
 
-    it('On init  project popup should have zero or more list items', () => {
+    it('Project popup should have zero or more list items on INIT', () => {
       component.ngOnInit();
       expect(component.projectsList.length).toBeGreaterThanOrEqual(0);
     });
-    // it('get all task should return zero or more tasks', () => {
-    //   component.getAllTask(1);
-    //   expect(component.tasksList.length).toBeGreaterThanOrEqual(0);
-    // });
-    it('On success  should return a message', () => { 
+   
+    it('Test Case for success  should return a message', () => { 
       component.showMessage(true,"Sucess!");
      
       expect(component.msgs.length) 
           .toBeGreaterThanOrEqual(1); 
     });
-    it('On error  should return a message', () => { 
+    it('Test Case for error  should return a message', () => { 
       component.showMessage(false,"Error occured!");
      
       expect(component.msgs.length) 
           .toBeGreaterThanOrEqual(1); 
     });
 
-    it('On form init edit  selected project name should be shown', () => { 
+    it('Test Case on form init edit  selected project name should be shown', () => { 
       component.onFormEditInit({Task_ID:1,Status:true,User_ID:null,Project_Name:'test',End_Date:'01/01/2017',Start_Date:'01/10/2018'});
      
       expect(component.selectedProject) 
           .toBe("test"); 
     });
-    it('On form init edit  selected project name should be shown', () => { 
+    it('Test case on form init edit selected project name should be shown', () => { 
       component.onFormEditInit({Task_ID:1,Status:true,Project_Name:'test'});
      
       expect(component.selectedProject) 
           .toBe("test"); 
     });
-    it('On edit  button text button text is edit ', () => { 
+    it('Test Case on edit button text button text is edit ', () => { 
       component.editMode();
      
       expect(component.formMode) 
           .toBe("Edit Task"); 
     });
-    it('On task submit  form mode Add task', () => { 
+    it('Test Case on task submit form mode Add task', () => { 
       component.addTaskSubmit();
      
       expect(component.formMode) 
           .toBe("Add Task"); 
     });
 
-    it('On task submit  form mode Add task', () => { 
+    it('Test Case on task submit  form mode Add task', () => { 
       component.addTaskForm.patchValue ({EndDateControl: '01/01/2017',StartDateControl:'01/02/2017'});
       component.addTaskSubmit();
      
@@ -106,33 +102,33 @@ describe('AddTaskComponent', () => {
           .toBe("Add Task"); 
     });
 
-    it('On select  task project name is set', () => { 
+    it('Test Case on select  task project name is set', () => { 
       component.selectProject("test",1);
      
       expect(component.selectedProject) 
           .toBe("test"); 
     });
-    it('On select  task project name is set', () => { 
+    it('Test Case on select  task project name is set', () => { 
       component.selectProject("test",1);
      
       expect(component.selectedProject) 
           .toBe("test"); 
     });
     
-    it('On assignUser user name is set', () => { 
+    it('Test Case on assignUser user name is set', () => { 
       component.assignUser(1,"test");
      
       expect(component.selectedUser) 
           .toBe("test"); 
     });
-    it('On select Task task name is set', () => { 
+    it('Test Case on select Task task name is set', () => { 
       component.selectPTask(1,"test");
      
       expect(component.selectedTask) 
           .toBe("test"); 
     });
 
-    it('On handle change parent control set disable control', () => { 
+    it('Test Case on handle change parent control set disable control', () => { 
       component.onFormInit();
       component.addTaskForm.patchValue ({IsParentTaskControl: true});
   
@@ -142,7 +138,7 @@ describe('AddTaskComponent', () => {
           .toBe(true); 
     });
 
-    it('On handle change parent control (false) set enable control', () => { 
+    it('Test Case on handle change parent control (false) set enable control', () => { 
       component.onFormInit();
       component.addTaskForm.patchValue ({IsParentTaskControl: false});
   
